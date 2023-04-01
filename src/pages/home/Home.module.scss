@@ -1,0 +1,36 @@
+body {
+  background-color: antiquewhite;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.headerContent {
+  background: url("../../../public/imgs/electric.jpg") no-repeat center;
+  background-size: cover;
+  //filter: alpha(0.7);
+  //-moz-opacity: 0.7;
+  opacity: 0.85;
+  height: 14vw;
+  font-family: hotninja;
+  font-size: 10vw;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.headerContent > div {
+  margin-top: -3vw;
+  color: #FFF
+}
+
+.content {
+  background-color: #FFFFFF;
+  padding: 2vw;
+  margin: 0 8vw;
+}

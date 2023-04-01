@@ -1,0 +1,106 @@
+@font-face {
+  font-family: hotninja;
+  src: url("../../../public/fonts/hotninja.otf");
+}
+
+@font-face {
+  font-family: hotninja;
+  src: url("../../../public/fonts/站酷酷黑体.ttf");
+}
+
+.titleEn {
+  font-family: hotninja;
+  font-size: 10vw;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+.title {
+  font-family: 站酷酷黑体;
+  font-size: 1vw;
+}
+
+.nav {
+  font-size: 1vw;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  height: 3vw;
+  line-height: 3vw;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.nav a,.nav a:link,.nav a:visited,.nav a:hover,.nav a:active{
+  text-decoration: none;
+  color:inherit;
+}
+
+.navItem {
+  text-align: center;
+  flex: 1;
+  list-style: none;
+  line-height: 3vw;
+  font-weight: bold;
+  height: 3vw;
+  color: grey;
+  box-sizing: border-box;
+  //border-color: #aaaaaa;
+  //border-style: inset;
+  //border-width: 2px;
+}
+
+.navItemActive {
+  flex: 1;
+  color: #000000;
+  box-sizing: border-box;
+  border-bottom: 3px solid #000000;
+  animation:load 3s ease-in;
+  -webkit-animation:load 3s ease-in;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  //background-color: #bbbbbb;
+  //border-color: #aaaaaa;
+  //border-style: inset;
+  //border-width: 2px;
+}
+
+.nativeLink {
+  display:inline-block;
+  width: 100%;
+}
+
+.navItemSelected {
+  flex: 1;
+  color: #000000;
+  box-sizing: border-box;
+  border-bottom: 3px solid #000000;
+  animation:load 3s ease-in;
+  -webkit-animation:load 3s ease-in;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  background-color: #eeeeee;
+  //border-color: #aaaaaa;
+  //border-style: inset;
+  //border-width: 2px;
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    width: 0;
+    height: 100%;
+  }
+  50% {
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
